@@ -60,5 +60,5 @@ end
 def winner(board)
   if (over?(board) && !draw?(board))
     won?(board)[0]
-
+  end
 end

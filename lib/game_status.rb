@@ -37,10 +37,9 @@ def won?(board)
 end
 
 def full?(board)
-  full = true
-  board.each{|index|
-    if !position_taken?(board, index)
-      full = false
+  board.each{|token|
+    if !position_taken?(board, token)
+      return false
     end
   }
   return full

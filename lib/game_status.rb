@@ -37,10 +37,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.each{|token|
-    if !position_taken?(board, token)
-      return false
-    end
+  if (board.detect{|token| token == " "})
+    return false
+  else return true
+  end
   }
 end
 

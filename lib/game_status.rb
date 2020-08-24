@@ -58,6 +58,6 @@ def over?(board)
 end
 
 def winner(board)
-  if (won?(board))
+  if (over?(board) && !draw?(board))
 
 end
